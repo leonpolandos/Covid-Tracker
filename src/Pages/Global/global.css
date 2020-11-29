@@ -1,0 +1,58 @@
+.globalStyle-container {
+    text-align: center; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: white;
+    max-width: 100%;
+    border: 2px solid green;
+    padding: 10px;
+    margin: 0px;
+    position: relative;
+    
+}
+
+.positif-container {
+    width: 150px;
+    background-color: orange;
+    border: 2px solid black;
+    padding: 100px;
+    margin:  1px;
+    position: relative;
+    left: 0px;
+    
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+
+}
+
+.sembuh-container {
+    width: 150px;
+    background-color: green;
+    border: 2px solid black;
+    padding: 100px;
+    margin: 1px;
+    position: absolute;
+    bottom: 10px;
+    left: 366px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    
+} 
+
+.meninggal-container {
+    width: 150px;
+    background-color: red;
+    border: 2px solid black;
+    padding: 100px;
+    margin: 1px;
+    position: absolute;
+    bottom: 10px;
+    left: 722px;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+} 

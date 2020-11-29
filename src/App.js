@@ -1,14 +1,68 @@
-import logo from './logo.svg';
+import react, {Component, useEffect, useState } from 'react';
+import axios from 'axios';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
+import { Global, Indonesia, Provinsi } from './Pages';
 
-function App() {
+
+const App = () => {
   return (
-    <div className="App">
-      <h1>My React App</h1>
-      <p>Leonard Polandos</p>
-      <h1>Project Final Web-Programming</h1>
-    </div>
+    <Router>
+      <div>
+          <nav>
+            <ul>
+              <li>
+                <Link to="/Global">Global</Link>
+              </li>
+              <li>
+                <Link to="/Indonesia">Indonesia</Link>
+              </li>
+              <li>
+                <Link to="/provinsi">Provinsi</Link>
+              </li>
+            </ul>
+          </nav>
+        <Switch>
+          <Route path="/">
+            <Route path="/global">
+              <Global/>
+            </Route>
+            <Route path="/indonesia">
+              <Indonesia/>
+            </Route>
+            <Route path="/provinsi">
+              <Provinsi/>
+            </Route>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
   );
 }
 
+
+// const App = () => {
+
+//   let [confirmed, setState] = useState([]);
+
+//   useEffect(() =>  {
+//     axios 
+//       .get("https://covid19.mathdro.id/api")
+//       .then((response) => setState(response.data))
+//   }, []);
+
+//   return (
+//     <>
+//       {confirmed.map((item) => {
+//         return (
+//           <Cards
+//             value={item.value}
+//             detail={item.detail}
+//           />
+//         )
+//       })}
+//     </>
+//   )
+    
+// };
 export default App;
