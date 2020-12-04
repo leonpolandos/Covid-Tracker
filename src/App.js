@@ -40,29 +40,4 @@ const App = () => {
   );
 }
 
-
-// const App = () => {
-
-//   let [confirmed, setState] = useState([]);
-
-//   useEffect(() =>  {
-//     axios 
-//       .get("https://covid19.mathdro.id/api")
-//       .then((response) => setState(response.data))
-//   }, []);
-
-//   return (
-//     <>
-//       {confirmed.map((item) => {
-//         return (
-//           <Cards
-//             value={item.value}
-//             detail={item.detail}
-//           />
-//         )
-//       })}
-//     </>
-//   )
-    
-// };
 export default App;
