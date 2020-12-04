@@ -1,58 +1,92 @@
-.globalStyle-container {
-    text-align: center; 
+/* .globalStyle-container{
+    position: relative;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-color: white;
-    max-width: 100%;
-    border: 2px solid green;
-    padding: 10px;
-    margin: 0px;
-    position: relative;
+    text-align: center;
+    background-color: black;
+    
     
 }
 
-.positif-container {
-    width: 150px;
+.positif-container{
     background-color: orange;
-    border: 2px solid black;
-    padding: 100px;
-    margin:  1px;
     position: relative;
-    left: 0px;
-    
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 15px;
+    padding: 20px;
 
+   
 }
 
-.sembuh-container {
-    width: 150px;
-    background-color: green;
-    border: 2px solid black;
-    padding: 100px;
-    margin: 1px;
-    position: absolute;
-    bottom: 10px;
-    left: 366px;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-    
-} 
+.sembuh-container{
+    background-color: orange;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 15px;
+    padding: 20px;
+}
 
-.meninggal-container {
-    width: 150px;
-    background-color: red;
-    border: 2px solid black;
-    padding: 100px;
-    margin: 1px;
-    position: absolute;
-    bottom: 10px;
-    left: 722px;
-    border-top-right-radius: 100px;
-    border-top-left-radius: 100px;
-    border-bottom-left-radius: 100px;
-    border-bottom-right-radius: 100px;
-} 
+.meninggal-container{
+    background-color: orange;
+    position: relative;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 15px;
+    padding: 20px;
+} */
+
+.globalStyle-container{
+    flex: 1px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    position: relative;
+    text-align : center;
+    font-size: 20;
+    font-weight : bold;
+    float: left;
+}
+
+.positif-container{
+    height : 70px;
+    width : 125px;
+    position: relative;
+    background-color : orange;
+    border-top-left-radius: 20px;
+    border-top-right-radius : 20px;
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius : 20px;
+    float: left;
+    left: 10px;
+}
+
+.sembuh-container{
+    position: relative;
+    height : 70px;
+    width : 125px;
+    background-color : green;
+    border-top-left-radius: 20px;
+    border-top-right-radius : 20px;
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius : 20px;
+    float: left;
+    left: 20px;
+}
+
+.meninggal-container{
+    height : 70px;
+    width : 125px;
+    position: relative;
+    background-color : red;
+    border-top-left-radius: 20px;
+    border-top-right-radius : 20px;
+    border-bottom-left-radius : 20px;
+    border-bottom-right-radius : 20px;
+    float: left;
+    left: 30px;
+}
+

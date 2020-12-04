@@ -12,10 +12,10 @@ const App = () => {
           <nav>
             <ul>
               <li>
-                <Link to="/Global">Global</Link>
+                <Link to="/global">Global</Link>
               </li>
               <li>
-                <Link to="/Indonesia">Indonesia</Link>
+                <Link to="/indonesia">Indonesia</Link>
               </li>
               <li>
                 <Link to="/provinsi">Provinsi</Link>
