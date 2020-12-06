@@ -1,47 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import NumberFormat from 'react-number-format';
 import './global.css'
-
-
-// class Global extends Component{
-//     constructor() {
-//         super();
-//         this.state = { 
-//             positif: [],
-//             sembuh: [],
-//             meninggal: [],
-//         }
-//     }
-  
-//     componentDidMount (){
-//         fetch('https://covid19.mathdro.id/api')
-//             .then(response => response.json())
-//             .then(json => (
-//                 this.setState({positif: json.confirmed.value}),
-//                 this.setState({sembuh: json.recovered.value}),
-//                 this.setState({meninggal: json.deaths.value})
-//             ))
-//     }
-  
-//     render() {
-//       return (
-//         <div className="globalStyle-container">
-//             <h1> GLOBAL </h1>
-//             <div className="positif-container">
-//                 Positif: {this.state.positif}
-//             </div>
-//             <div className="sembuh-container">
-//                 Sembuh: {this.state.positif}
-//             </div>
-//             <div className="meninggal-container">
-//                 Meninggal: {this.state.meninggal}  
-//             </div>
-          
-//         </div>
-//       )
-//     }
-  
-//   }
 
 const Global = () => {
     const [positif, setPositif] = useState([]);
@@ -64,13 +24,13 @@ const Global = () => {
         <div className="globalStyle-container">
             <h3>Jumblah Kasus Dunia:</h3>
             <div className="positif-container">
-                Positif: {positif.value}
+                <NumberFormat value={positif.value} displayType={'text'} thousandSeparator={true} renderText={positif => <div><>Positif: </>{positif}</div>}>{positif.value}</NumberFormat>
             </div>
             <div className="sembuh-container">
-                Sembuh: {sembuh.value}
+                <NumberFormat value={sembuh.value} displayType={'text'} thousandSeparator={true} renderText={sembuh => <div><>Sembuh: </>{sembuh}</div>}>{positif.value}</NumberFormat>
             </div>
             <div className="meninggal-container">
-                Meninggal: {meninggal.value}
+                <NumberFormat value={meninggal.value} displayType={'text'} thousandSeparator={true} renderText={meninggal => <div><>Meninggal: </>{meninggal}</div>}>{meninggal.value}</NumberFormat>
             </div>
     </div>
     )

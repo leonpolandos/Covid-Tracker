@@ -1,22 +1,14 @@
-import react from 'react';
-import './provinsi.css'
+import NumberFormat from 'react-number-format';
 
-const Tabel = ({provinsi, kasusPositif, kasusSembuh, kasusMeninggal}) => {
+const Tabel = ({provinsi ,kasusPositif, kasusSembuh, kasusMeninggal}) => {
     return (
-        <table>
-            <tr>
-                <th>Provinsi</th>
-                <th>Positif</th>
-                <th>Sembuh</th>
-                <th>Meninggal</th>
-            </tr>
-            <tr>
-                <td>{provinsi}</td>
-                <td>{kasusPositif}</td>
-                <td>{kasusSembuh}</td>
-                <td>{kasusMeninggal}</td>
-            </tr>
-        </table>
+        <>
+            {provinsi}
+            <NumberFormat value={kasusPositif} displayType={'text'} thousandSeparator={true} renderText={kasusPositif => <div>{kasusPositif}</div>}>{kasusPositif}</NumberFormat>
+            <NumberFormat value={kasusSembuh} displayType={'text'} thousandSeparator={true} renderText={kasusSembuh => <div>{kasusSembuh}</div>}>{kasusSembuh}</NumberFormat>
+            <NumberFormat value={kasusMeninggal} displayType={'text'} thousandSeparator={true} renderText={kasusMeninggal => <div>{kasusMeninggal}</div>}>{kasusMeninggal}</NumberFormat>   
+        </>
+    
     )
 }
 

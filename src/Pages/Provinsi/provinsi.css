@@ -1,11 +1,25 @@
 table{
-    width: 400px;
+    width: 700px;
+    background-color: whitesmoke;
 }
 
 th{
-    text-align: left;
+    text-align: center;
 }
 
 table, th, td{
     border: 1px solid #000;
+    text-align: center;
+}
+
+td.positif {
+    background-color: orange;
+}
+
+td.sembuh {
+    background-color: green;
+}
+
+td.meninggal {
+    background-color: red;
 }

@@ -1,5 +1,3 @@
-import react, {Component, useEffect, useState } from 'react';
-import axios from 'axios';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Link} from 'react-router-dom';
 import { Global, Indonesia, Provinsi } from './Pages';

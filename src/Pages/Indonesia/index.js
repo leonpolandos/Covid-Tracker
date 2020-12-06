@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import NumberFormat from 'react-number-format';
 import './indonesia.css'
 
 const Indonesia = () => {
@@ -23,16 +24,16 @@ const Indonesia = () => {
         <div className="globalindonesiaStyle-container">
             <div>Jumblah Kasus Indonesia:</div>
             <div className="jumblahKasus-container">
-                Jumblah Kasus Keseluruhan: {jumblahKasus.jumlahKasus}
+            <NumberFormat value={jumblahKasus.jumlahKasus} displayType={'text'} thousandSeparator={true} renderText={jumblahKasus => <div><>Jumblah Kasus: </>{jumblahKasus}</div>}>{jumblahKasus.jumlahKasus}</NumberFormat>
             </div>
             <div className="perawatan-container">
-                Perawatan: {perawatanCovid.perawatan}
+            <NumberFormat value={perawatanCovid.perawatan} displayType={'text'} thousandSeparator={true} renderText={perawatanCovid => <div><>Perawatan: </>{perawatanCovid}</div>}>{perawatanCovid.perawatan}</NumberFormat>
             </div>
             <div className="sembuh-container">
-                Sembuh: {sembuhCovid.sembuh}
+            <NumberFormat value={sembuhCovid.sembuh} displayType={'text'} thousandSeparator={true} renderText={sembuhCovid => <div><>Sembuh: </>{sembuhCovid}</div>}>{sembuhCovid.sembuh}</NumberFormat>
             </div>
             <div className="meninggal-container">
-                Meninggal: {meninggalCovid.meninggal}
+            <NumberFormat value={meninggalCovid.meninggal} displayType={'text'} thousandSeparator={true} renderText={meninggalCovid => <div><>Meninggal: </>{meninggalCovid}</div>}>Meninggal: {meninggalCovid.meninggal}</NumberFormat>
             </div>
         </div>
     )
